@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary3"
+    tools:context=".TambahKontakActivity"
+    android:paddingTop="200dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/white"
+        android:elevation="3dp"
+        >
+
+
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/judul"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Kontak Baru"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ln"
+            app:layout_constraintEnd_toEndOf="@+id/ln"
+            app:layout_constraintStart_toStartOf="@id/ln"
+            android:background="@drawable/outline_shape">
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Nama Kontak"
+                android:textSize="14dp"
+                android:inputType="text"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ln"
+            app:layout_constraintEnd_toEndOf="@+id/ln"
+            app:layout_constraintStart_toStartOf="@id/ln"
+            android:background="@drawable/outline_shape">
+
+            <EditText
+                android:id="@+id/etNomor"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:hint="Nomor Kontak"
+                android:textSize="14dp"
+                android:inputType="text"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/fill_shape"
+            android:text="Tambah Kontak"
+            android:textAllCaps="false"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="302dp" />
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
